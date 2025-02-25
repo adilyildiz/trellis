@@ -9,6 +9,16 @@ module.exports = {
         ]
       }
     },
+    {
+      method: "shell.run",
+      params: {
+        venv: "env",
+        path: "app",
+        message: [          
+          "uv pip install -U setuptools wheel ninja"
+        ]
+      }
+    },
     // Delete this step if your project does not use torch
     {
       method: "script.start",
